@@ -1,0 +1,38 @@
+generated: '2026-07-18'
+method: searched
+source: >-
+  https://login.bpsnap.com/.well-known/openid-configuration (Auth0 OIDC
+  discovery for Blackpoint's identity tenant, referenced by the CompassOne app
+  as WEB_PUBLIC_AUTH0_DOMAIN); CompassOne API key model documented via the
+  BlackpointCyber/PSCompassOne module (Connect-CompassOne -ApiKey).
+docs: https://login.bpsnap.com/.well-known/openid-configuration
+summary:
+  types: [openIdConnect, oauth2, apiKey]
+  api_key_in: [header]
+  oauth2_flows: [authorizationCode, clientCredentials, deviceCode, refreshToken]
+schemes:
+- name: CompassOneOIDC
+  type: openIdConnect
+  openIdConnectUrl: https://login.bpsnap.com/.well-known/openid-configuration
+  issuer: https://login.bpsnap.com/
+  provider: Auth0
+  authorizationUrl: https://login.bpsnap.com/authorize
+  tokenUrl: https://login.bpsnap.com/oauth/token
+  deviceAuthorizationUrl: https://login.bpsnap.com/oauth/device/code
+  userinfoUrl: https://login.bpsnap.com/userinfo
+  jwksUri: https://login.bpsnap.com/.well-known/jwks.json
+  audience: https://bpsnap.auth0.com/api/v2/
+  grant_types:
+  - authorization_code
+  - client_credentials
+  - refresh_token
+  - urn:ietf:params:oauth:grant-type:device_code
+  - urn:ietf:params:oauth:grant-type:token-exchange
+- name: CompassOneApiKey
+  type: apiKey
+  in: header
+  parameter_name: Authorization
+  description: >-
+    Secret API key generated in the CompassOne portal, sent in an Authorization
+    header for programmatic access (e.g. the PSCompassOne PowerShell module's
+    Connect-CompassOne -ApiKey).
