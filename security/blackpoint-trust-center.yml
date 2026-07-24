@@ -1,0 +1,17 @@
+generated: '2026-07-18'
+method: searched
+probe: true
+url: https://blackpointcyber.com/company/trust-center/
+certifications:
+- SOC 2 Type II
+- GDPR
+- HIPAA
+evidence:
+- source: https://blackpointcyber.com/company/trust-center/
+  keywords: [soc 2 type 2, gdpr, hipaa, trust center, annual external audit]
+notes: >-
+  Blackpoint's Trust Center is a self-hosted page (no SafeBase/Vanta portal).
+  SOC 2 Type II is an annual external audit; HIPAA offered via BAA; GDPR
+  compliance documented. PCI-DSS is referenced but Blackpoint states it does not
+  directly process payment cards, so it is not recorded as a held certification.
+  Compliance documents are available on request from the privacy team.

@@ -1,0 +1,23 @@
+generated: '2026-07-18'
+method: searched
+source: >-
+  https://github.com/BlackpointCyber (org repositories). No first-party client
+  library is published to a public package registry (PowerShell Gallery
+  PSCompassOne = 404, npm/PyPI = none found).
+packages:
+- language: powershell
+  registry: github
+  name: PSCompassOne
+  url: https://github.com/BlackpointCyber/compassone-api-powershell-module---3-u53rtw
+  install: (source only — not published to PowerShell Gallery)
+  official: false
+  notes: >-
+    PowerShell module for the CompassOne API under the BlackpointCyber GitHub
+    org, but the repo README is marked "Repository created autonomously by
+    BlitzCode" and the module is not published to PowerShell Gallery, so it is
+    not recorded as an official first-party SDK.
+notes: >-
+  Blackpoint Cyber's CompassOne API (api.blackpointcyber.com) is gated and ships
+  no publicly released, registry-published first-party SDK as of this pass. The
+  only client code found is autonomously-generated PowerShell modules in the
+  GitHub org. No `SDKs` pointer is emitted (no clearly-official published SDK).

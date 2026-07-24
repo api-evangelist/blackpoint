@@ -1,0 +1,33 @@
+# Blackpoint Cyber
+
+> Blackpoint Cyber is a cybersecurity company (Accel-backed) whose CompassOne platform unifies managed detection and response (MDR), identity threat detection and response (ITDR), and security posture management, backed by a 24/7 human-led, AI-powered SOC. This profile is maintained by API Evangelist as part of the APIs.io network; the CompassOne product API (api.blackpointcyber.com) is gated behind Auth0 identity and API keys, so most machine-readable artifacts here are derived from Blackpoint's public identity, security, and compliance surface rather than a public OpenAPI.
+
+## Product
+- CompassOne platform: https://blackpointcyber.com/platform/
+- Solutions: https://blackpointcyber.com/solutions/
+- Integrations: https://blackpointcyber.com/integrations/
+- CompassOne app / partner login: https://compassone.blackpointcyber.com/
+
+## Docs & Support
+- Help / support portal: https://support.blackpointcyber.com/
+- Resources / blog: https://blackpointcyber.com/resources/
+- FAQs: https://blackpointcyber.com/frequently-asked-questions/
+- Threat intelligence & research: https://blackpointcyber.com/threat-intelligence-and-research/
+
+## Identity & Security
+- OIDC discovery (Auth0 tenant login.bpsnap.com): https://login.bpsnap.com/.well-known/openid-configuration
+- Trust Center (SOC 2 Type II, GDPR, HIPAA): https://blackpointcyber.com/company/trust-center/
+- Privacy Policy: https://blackpointcyber.com/privacy-policy/
+- Terms & Conditions: https://blackpointcyber.com/terms-and-conditions/
+
+## Code
+- GitHub organization: https://github.com/BlackpointCyber
+
+## API Evangelist artifacts (this repo)
+- Authentication profile: authentication/blackpoint-authentication.yml
+- OAuth/OIDC scopes: scopes/blackpoint-scopes.yml
+- Well-known index: well-known/blackpoint-well-known.yml
+- Conformance: conformance/blackpoint-conformance.yml
+- Trust center: security/blackpoint-trust-center.yml
+- Domain security: security/blackpoint-domain-security.yml
+- Packages: packages/blackpoint-packages.yml

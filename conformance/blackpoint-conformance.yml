@@ -1,0 +1,34 @@
+generated: '2026-07-18'
+method: searched
+source: >-
+  https://login.bpsnap.com/.well-known/openid-configuration (OIDC/OAuth2);
+  https://blackpointcyber.com/company/trust-center/ (compliance program)
+standards:
+- id: oauth2
+  conforms: true
+  evidence: >-
+    Auth0 OIDC tenant login.bpsnap.com advertises authorization_code,
+    client_credentials, refresh_token and device_code grant types.
+- id: oidc
+  conforms: true
+  evidence: RFC 8414 /.well-known/openid-configuration discovery document served (200).
+- id: soc2-type2
+  conforms: true
+  evidence: >-
+    Trust Center states "We undergo an annual SOC 2 Type 2 external audit."
+- id: gdpr
+  conforms: true
+  evidence: Trust Center documents GDPR compliance and a privacy team contact.
+- id: hipaa
+  conforms: true
+  evidence: Trust Center offers a HIPAA Business Associate Agreement.
+- id: pci-dss
+  conforms: false
+  evidence: >-
+    Trust Center notes Blackpoint does not directly handle payment card
+    processing; PCI-DSS is referenced but not asserted as a certification.
+- id: rfc9457-problem-details
+  conforms: false
+  evidence: No public OpenAPI or error reference; problem+json usage unverified.
+- id: fapi
+  conforms: false

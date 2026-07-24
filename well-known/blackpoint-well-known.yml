@@ -1,0 +1,35 @@
+generated: '2026-07-18'
+method: searched
+source: >-
+  CompassOne SPA runtime config (compassone.blackpointcyber.com) exposed
+  WEB_PUBLIC_AUTH0_DOMAIN=login.bpsnap.com; probed its Auth0 OIDC discovery.
+notes: >-
+  blackpointcyber.com and compassone.blackpointcyber.com return an SPA HTML
+  shell (200 text/html) for arbitrary /.well-known/* paths, so those are NOT
+  real discovery documents and are not indexed. The only genuine machine
+  document is the Auth0 OIDC discovery for Blackpoint's identity tenant
+  (login.bpsnap.com), which backs CompassOne authentication.
+hosts:
+- host: https://login.bpsnap.com
+  documents:
+  - path: /.well-known/openid-configuration
+    status: 200
+    file: blackpoint-openid-configuration.json
+  - path: /.well-known/jwks.json
+    status: 200
+- host: https://blackpointcyber.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+- host: https://api.blackpointcyber.com
+  documents:
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /openapi.json
+    status: 404

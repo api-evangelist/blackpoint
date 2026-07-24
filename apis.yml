@@ -1,9 +1,33 @@
 aid: blackpoint
 name: Blackpoint
-description: 'Blackpoint is a company surfaced as a portfolio company of accel and added to the API Evangelist
-  network as a stub for enrichment. Sector: cybersecurity. This profile is a lead awaiting the enrichment
-  pipeline.'
+description: >-
+  Blackpoint Cyber is an Accel-backed cybersecurity company whose CompassOne
+  platform unifies prevention, detection, and response into a single security
+  operations product for MSPs, MSSPs, and enterprises. CompassOne combines
+  managed detection and response (MDR), identity threat detection and response
+  (ITDR), and security posture management, backed by a 24/7 human-led,
+  AI-powered security operations center of threat hunters and incident
+  responders. Capabilities span asset discovery and inventory, endpoint and
+  cloud threat detection, cloud posture and configuration-drift management,
+  vulnerability prioritization, application control, SIEM, and compliance and
+  security-maturity assessment. The CompassOne product API
+  (api.blackpointcyber.com) is gated behind an Auth0 OIDC identity tenant and
+  portal-issued API keys; this API Evangelist profile captures Blackpoint's
+  public identity, security, compliance, and developer surface.
 url: https://raw.githubusercontent.com/api-evangelist/blackpoint/refs/heads/main/apis.yml
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://blackpointcyber.com/wp-content/uploads/2025/01/opengraph.png
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
@@ -12,10 +36,17 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
 - Cybersecurity
+- Managed Detection and Response
+- MDR
+- Security Operations
+- Identity Threat Detection
+- Security Posture Management
+- MSP
+- SIEM
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -25,3 +56,48 @@ maintainers:
 common:
 - type: Website
   url: https://blackpointcyber.com/
+- type: Platform
+  url: https://blackpointcyber.com/platform/
+- type: DeveloperPortal
+  url: https://compassone.blackpointcyber.com/
+- type: Login
+  url: https://compassone.blackpointcyber.com/
+- type: Support
+  url: https://support.blackpointcyber.com/
+- type: HelpCenter
+  url: https://support.blackpointcyber.com/
+- type: Blog
+  url: https://blackpointcyber.com/resources/
+- type: GitHubOrganization
+  url: https://github.com/BlackpointCyber
+- type: Integrations
+  url: https://blackpointcyber.com/integrations/
+- type: TermsOfService
+  url: https://blackpointcyber.com/terms-and-conditions/
+- type: PrivacyPolicy
+  url: https://blackpointcyber.com/privacy-policy/
+- type: TrustCenter
+  url: https://blackpointcyber.com/company/trust-center/
+- type: Compliance
+  url: https://blackpointcyber.com/company/trust-center/
+- type: Authentication
+  url: authentication/blackpoint-authentication.yml
+- type: OAuthScopes
+  url: scopes/blackpoint-scopes.yml
+- type: WellKnown
+  url: well-known/blackpoint-well-known.yml
+- type: Conformance
+  url: conformance/blackpoint-conformance.yml
+- type: TrustCenter
+  url: security/blackpoint-trust-center.yml
+- type: DomainSecurity
+  url: security/blackpoint-domain-security.yml
+- type: Packages
+  url: packages/blackpoint-packages.yml
+- type: LLMsTxt
+  url: llms/blackpoint-llms.txt
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
