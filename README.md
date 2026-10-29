@@ -64,6 +64,94 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Blackpoint is a company surfaced as a portfolio company of accel and added to the API Evangelist network as a stub for enrichment. Sector: cybersecurity. This profile is a lead awaiting the enrichment pipeline.
+Blackpoint Cyber is an Accel-backed cybersecurity company whose CompassOne platform unifies prevention, detection, and response into a single security operations product for MSPs, MSSPs, and enterprises. CompassOne combines managed detection and response (MDR), identity threat detection and response (ITDR), and security posture management, backed by a 24/7 human-led, AI-powered security operations center of threat hunters and incident responders. Capabilities span asset discovery and inventory, endpoint and cloud threat detection, cloud posture and configuration-drift management, vulnerability prioritization, application control, SIEM, and compliance and security-maturity assessment. The CompassOne product API (api.blackpointcyber.com) is gated behind an Auth0 OIDC identity tenant and portal-issued API keys; this API Evangelist profile captures Blackpoint's public identity, security, compliance, and developer surface.
 
-Backed by: accel — https://blackpointcyber.com/
+**Areas:** Company · Cybersecurity · Managed Detection and Response · MDR · Security Operations · Identity Threat Detection · Security Posture Management · MSP · SIEM
+
+## Blackpoint on APIs.io
+
+Everything profiled for Blackpoint is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/blackpoint/](https://apis.io/providers/blackpoint/)** — or go straight to one of the APIs or properties below.
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Security (3)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Blackpoint Authentication](https://apis.io/security/blackpoint/blackpoint-authentication/)
+- [Blackpoint Domain Security](https://apis.io/security/blackpoint/blackpoint-domain-security/)
+- [Blackpoint Trust Center](https://apis.io/security/blackpoint/blackpoint-trust-center/)
+
+#### OAuth scopes (1)
+
+The permissions the API asks for.
+
+- [Blackpoint Scopes](https://apis.io/scopes/blackpoint/blackpoint-scopes/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://blackpointcyber.com/)
+- [Support](https://support.blackpointcyber.com/)
+- [Blog](https://blackpointcyber.com/resources/)
+- [Compliance](https://blackpointcyber.com/company/trust-center/)
+- [Trust centre](https://blackpointcyber.com/company/trust-center/)
+- [Terms of service](https://blackpointcyber.com/terms-and-conditions/)
+- [Privacy policy](https://blackpointcyber.com/privacy-policy/)
+- [GitHub](https://github.com/BlackpointCyber)
+
+## API Evangelist rating
+
+**Kin Score 22.4** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 55.4 |
+| Contract quality | 0.0 |
+| Contract governance | 18.2 |
+| Operational transparency | 2.6 |
+| Developer ergonomics | 16.7 |
+| Access clarity | 36.8 |
+
+**Agent readiness 15.1** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | served (partial credit) |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | served (partial credit) |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | yes |
+| Agentic Commerce | — |
+
+**Regulatory alignment 39.2** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/blackpoint/](https://apis.io/providers/blackpoint/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Blackpoint: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/blackpoint/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
